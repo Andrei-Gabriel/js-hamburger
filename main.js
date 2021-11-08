@@ -1,6 +1,11 @@
-(document.getElementsByClassName("fas fa-bars")).addEventListener("click", 
+(document.querySelector(".fa, .fa-bars")).addEventListener("click", 
     function() {
-        const hamburgerMenu = document.getElementsByClassName("hamburger-menu");
-        hamburgerMenu.style.display = "initial";
+        document.querySelector(".hamburger-menu").style.display = "initial";
+    }
+);
+
+(document.querySelector(".fa, .fa-times")).addEventListener("click", 
+    function() {
+        document.querySelector(".hamburger-menu").style.display = "none";
     }
 );
